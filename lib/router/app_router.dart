@@ -7,6 +7,8 @@ import '../mine_sweeper/mine_sweeper_game_page.dart';
 import '../mine_sweeper/mine_sweeper_page.dart';
 import '../tetris/tetris_game_page.dart';
 import '../tetris/tetris_page.dart';
+import '../sheep/sheep_game_page.dart';
+import '../sheep/sheep_page.dart';
 
 /// 路由路径常量
 class AppRoutePath {
@@ -24,6 +26,12 @@ class AppRoutePath {
 
   /// 俄罗斯方块 - 游戏对战
   static const String tetrisGame = '/tetris/game';
+
+  /// 羊了个羊 - 开始页
+  static const String sheep = '/sheep';
+
+  /// 羊了个羊 - 游戏对战
+  static const String sheepGame = '/sheep/game';
 }
 
 /// 全局路由配置
@@ -64,6 +72,18 @@ final GoRouter appRouter = GoRouter(
       path: AppRoutePath.tetrisGame,
       builder: (BuildContext context, GoRouterState state) {
         return const TetrisGamePage();
+      },
+    ),
+    GoRoute(
+      path: AppRoutePath.sheep,
+      builder: (BuildContext context, GoRouterState state) {
+        return const SheepPage();
+      },
+    ),
+    GoRoute(
+      path: AppRoutePath.sheepGame,
+      builder: (BuildContext context, GoRouterState state) {
+        return const SheepGamePage();
       },
     ),
   ],

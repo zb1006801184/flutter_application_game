@@ -21,4 +21,11 @@ final List<GameItem> games = [
     color: Colors.deepPurple,
     routePath: AppRoutePath.tetris,
   ),
+  GameItem(
+    name: '羊了个羊',
+    description: '三层堆叠消除游戏，点击相同图案集齐 3 个即可消除',
+    icon: Icons.pets,
+    color: Colors.green,
+    routePath: AppRoutePath.sheep,
+  ),
 ];
