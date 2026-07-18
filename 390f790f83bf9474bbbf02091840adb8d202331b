@@ -1,0 +1,45 @@
+lib/sheep/bean/sheep_tile_bean.dart
+  971f1935d0136165 1-60
+lib/router/app_router.dart
+  971f1935d0136165 10-11,29-34,77-88
+lib/sheep/enum/sheep_tile_type.dart
+  971f1935d0136165 1-25
+lib/sheep/widgets/sheep_tile_widget.dart
+  971f1935d0136165 1-76
+lib/sheep/sheep_game_page.dart
+  971f1935d0136165 1-142
+lib/sheep/sheep_page.dart
+  971f1935d0136165 1-61
+lib/sheep/widgets/sheep_slot_widget.dart
+  971f1935d0136165 1-51
+lib/sheep/enum/sheep_game_status.dart
+  971f1935d0136165 1-17
+lib/sheep/provider/sheep_provider.dart
+  971f1935d0136165 1-284
+lib/sheep/widgets/sheep_game_header_widget.dart
+  971f1935d0136165 1-131
+lib/sheep/widgets/sheep_game_board_widget.dart
+  971f1935d0136165 1-89
+lib/home/games.dart
+  971f1935d0136165 24-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "390f790f83bf9474bbbf02091840adb8d202331b",
+  "prompts": {
+    "971f1935d0136165": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "bca18a58-33ae-48fc-a236-85005916e28e",
+        "model": "glm-5.2"
+      },
+      "human_author": "zhubiao <zhubiaozhubiao@didiglobal.com>",
+      "messages": [],
+      "total_additions": 981,
+      "total_deletions": 18,
+      "accepted_lines": 963,
+      "overriden_lines": 0
+    }
+  }
+}
