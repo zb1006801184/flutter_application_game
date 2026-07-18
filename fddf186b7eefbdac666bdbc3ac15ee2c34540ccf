@@ -1,0 +1,45 @@
+lib/tetris/tetris_page.dart
+  c32072bdca58eb51 1-59
+lib/tetris/provider/tetris_provider.dart
+  c32072bdca58eb51 1-281
+lib/tetris/widgets/tetris_control_pad_widget.dart
+  c32072bdca58eb51 1-89
+lib/tetris/enum/tetris_block_type.dart
+  c32072bdca58eb51 1-48
+lib/tetris/widgets/tetris_game_board_widget.dart
+  c32072bdca58eb51 1-107
+lib/tetris/widgets/tetris_game_header_widget.dart
+  c32072bdca58eb51 1-124
+lib/tetris/widgets/tetris_next_block_widget.dart
+  c32072bdca58eb51 1-113
+lib/router/app_router.dart
+  c32072bdca58eb51 8-9,21-26,57-68
+lib/tetris/enum/tetris_game_status.dart
+  c32072bdca58eb51 1-14
+lib/home/games.dart
+  c32072bdca58eb51 17-23
+lib/tetris/bean/tetris_block_bean.dart
+  c32072bdca58eb51 1-195
+lib/tetris/tetris_game_page.dart
+  c32072bdca58eb51 1-144
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "fddf186b7eefbdac666bdbc3ac15ee2c34540ccf",
+  "prompts": {
+    "c32072bdca58eb51": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "a5b34344-77a4-4b5f-9f90-2798de351dda",
+        "model": "glm-5.2"
+      },
+      "human_author": "zhubiao <zhubiaozhubiao@didiglobal.com>",
+      "messages": [],
+      "total_additions": 1210,
+      "total_deletions": 9,
+      "accepted_lines": 1201,
+      "overriden_lines": 0
+    }
+  }
+}
