@@ -1,0 +1,27 @@
+lib/mine_sweeper/widgets/mine_sweeper_game_header_widget.dart
+  ddf125300f22bfa4 8,18,87,93-136
+lib/mine_sweeper/provider/mine_sweeper_provider.dart
+  ddf125300f22bfa4 32-34,143-144
+lib/mine_sweeper/mine_sweeper_game_page.dart
+  ddf125300f22bfa4 42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "3179e3848ae714509520c0612b89f80a7ba50b4a",
+  "prompts": {
+    "ddf125300f22bfa4": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "633455ef-b05d-4367-89cb-fc07fbc2f605",
+        "model": "glm-5.2"
+      },
+      "human_author": "zhubiao <zhubiaozhubiao@didiglobal.com>",
+      "messages": [],
+      "total_additions": 53,
+      "total_deletions": 12,
+      "accepted_lines": 53,
+      "overriden_lines": 0
+    }
+  }
+}
