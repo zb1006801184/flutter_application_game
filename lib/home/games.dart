@@ -14,4 +14,11 @@ final List<GameItem> games = [
     color: Colors.orange,
     routePath: AppRoutePath.mineSweeper,
   ),
+  GameItem(
+    name: '俄罗斯方块',
+    description: '经典消除类游戏，移动旋转方块填满整行得分',
+    icon: Icons.grid_view,
+    color: Colors.deepPurple,
+    routePath: AppRoutePath.tetris,
+  ),
 ];
