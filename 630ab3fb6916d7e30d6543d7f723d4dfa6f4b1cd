@@ -1,0 +1,35 @@
+lib/home/games.dart
+  9506680a7ce98caf 3,15
+lib/main.dart
+  9506680a7ce98caf 4,15,21
+lib/router/app_router.dart
+  9506680a7ce98caf 1-50
+lib/home/game_item.dart
+  9506680a7ce98caf 5,19-20,27
+lib/home/home_page.dart
+  9506680a7ce98caf 1-84
+pubspec.yaml
+  9506680a7ce98caf 15-16
+lib/mine_sweeper/mine_sweeper_page.dart
+  9506680a7ce98caf 2,4,50-52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "630ab3fb6916d7e30d6543d7f723d4dfa6f4b1cd",
+  "prompts": {
+    "9506680a7ce98caf": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "fd8cb18f-f1ae-4d93-a47b-3c417674c53c",
+        "model": "glm-5.2"
+      },
+      "human_author": "zhubiao <zhubiaozhubiao@didiglobal.com>",
+      "messages": [],
+      "total_additions": 154,
+      "total_deletions": 99,
+      "accepted_lines": 150,
+      "overriden_lines": 0
+    }
+  }
+}
