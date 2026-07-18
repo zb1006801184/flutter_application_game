@@ -1,0 +1,23 @@
+README.md
+  352a6b0bb154a309 3,5,7,9,11,13-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "02691b1b59ef75bb8fa143012d5d57ce03ec4ff9",
+  "prompts": {
+    "352a6b0bb154a309": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "8a6d9d6e-def5-4f5a-87ea-8f07098b5018",
+        "model": "glm-5.2"
+      },
+      "human_author": "zhubiao <zhubiaozhubiao@didiglobal.com>",
+      "messages": [],
+      "total_additions": 59,
+      "total_deletions": 9,
+      "accepted_lines": 59,
+      "overriden_lines": 0
+    }
+  }
+}
