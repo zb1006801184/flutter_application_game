@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
+import '../router/app_router.dart';
 import 'bean/mine_sweeper_game_config_bean.dart';
-import 'mine_sweeper_game_page.dart';
 
 /// 扫雷 - 难度选择页面
 class MineSweeperPage extends StatelessWidget {
@@ -46,11 +47,9 @@ class MineSweeperPage extends StatelessWidget {
             ),
           ),
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (_) => MineSweeperGamePage(config: config),
-              ),
+            context.push(
+              AppRoutePath.mineSweeperGame,
+              extra: config,
             );
           },
           child: Text(

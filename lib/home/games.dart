@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../mine_sweeper/mine_sweeper_page.dart';
+import '../router/app_router.dart';
 import 'game_item.dart';
 
 /// 首页游戏列表数据源
@@ -12,6 +12,6 @@ final List<GameItem> games = [
     description: '经典扫雷游戏，支持初/中/高三个难度',
     icon: Icons.brightness_7,
     color: Colors.orange,
-    pageBuilder: (_) => const MineSweeperPage(),
+    routePath: AppRoutePath.mineSweeper,
   ),
 ];
