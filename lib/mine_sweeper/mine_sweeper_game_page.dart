@@ -39,6 +39,7 @@ class _MineSweeperGamePageState extends ConsumerState<MineSweeperGamePage> {
         children: [
           MineSweeperGameHeaderWidget(
             remainingFlags: notifier.remainingFlags,
+            flaggedCount: notifier.flaggedCount,
             elapsedSeconds: notifier.elapsedSeconds,
             gameStatus: notifier.gameStatus,
             isMarkMode: notifier.isMarkMode,

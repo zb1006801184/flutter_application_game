@@ -29,6 +29,9 @@ class MineSweeperNotifier extends ChangeNotifier {
   /// 剩余旗帜数
   int remainingFlags = 0;
 
+  /// 已标记的格子数
+  int get flaggedCount => config.mineCount - remainingFlags;
+
   /// 是否为首次点击
   bool isFirstClick = true;
 
@@ -137,6 +140,8 @@ class MineSweeperNotifier extends ChangeNotifier {
     if (cell.status == MineSweeperCellStatus.opened) return;
 
     if (cell.status == MineSweeperCellStatus.closed) {
+      // 剩余旗帜不足时禁止继续标记
+      if (remainingFlags <= 0) return;
       board[row][col] = cell.copyWith(status: MineSweeperCellStatus.flagged);
       remainingFlags--;
     } else {

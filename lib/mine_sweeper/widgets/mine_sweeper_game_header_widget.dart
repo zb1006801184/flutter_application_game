@@ -5,6 +5,7 @@ import '../enum/mine_sweeper_game_status.dart';
 /// 游戏顶部信息栏（剩余雷数、笑脸按钮、计时器、标记模式开关）
 class MineSweeperGameHeaderWidget extends StatelessWidget {
   final int remainingFlags;
+  final int flaggedCount;
   final int elapsedSeconds;
   final MineSweeperGameStatus gameStatus;
   final bool isMarkMode;
@@ -14,6 +15,7 @@ class MineSweeperGameHeaderWidget extends StatelessWidget {
   const MineSweeperGameHeaderWidget({
     super.key,
     required this.remainingFlags,
+    required this.flaggedCount,
     required this.elapsedSeconds,
     required this.gameStatus,
     required this.isMarkMode,
@@ -82,23 +84,56 @@ class MineSweeperGameHeaderWidget extends StatelessWidget {
   }
 
   /// 标记模式切换按钮：开启后点击格子改为标记/取消旗帜
+  /// 按钮右上角显示已标记的格子数量
   Widget _buildMarkModeButton() {
     final color = isMarkMode ? Colors.red : Colors.grey.shade400;
     final bgColor = isMarkMode ? Colors.red.shade50 : Colors.grey.shade100;
     return GestureDetector(
       onTap: onToggleMarkMode,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-        decoration: BoxDecoration(
-          color: bgColor,
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: color, width: isMarkMode ? 2 : 1),
-        ),
-        child: Icon(
-          Icons.flag_outlined,
-          color: color,
-          size: 22,
-        ),
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+            decoration: BoxDecoration(
+              color: bgColor,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: color, width: isMarkMode ? 2 : 1),
+            ),
+            child: Icon(
+              Icons.flag_outlined,
+              color: color,
+              size: 22,
+            ),
+          ),
+          // 已标记数量角标
+          if (flaggedCount > 0)
+            Positioned(
+              right: -6,
+              top: -6,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: Colors.white, width: 1),
+                ),
+                constraints: const BoxConstraints(
+                  minWidth: 16,
+                  minHeight: 16,
+                ),
+                child: Text(
+                  '$flaggedCount',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+        ],
       ),
     );
   }
