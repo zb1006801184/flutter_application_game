@@ -28,4 +28,11 @@ final List<GameItem> games = [
     color: Colors.green,
     routePath: AppRoutePath.sheep,
   ),
+  GameItem(
+    name: '火柴人闯关',
+    description: '横版跑跳闯关，攻击小怪、躲避尖刺，抵达终点通关',
+    icon: Icons.directions_run,
+    color: Colors.deepOrange,
+    routePath: AppRoutePath.stickman,
+  ),
 ];

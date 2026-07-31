@@ -9,6 +9,8 @@ import '../tetris/tetris_game_page.dart';
 import '../tetris/tetris_page.dart';
 import '../sheep/sheep_game_page.dart';
 import '../sheep/sheep_page.dart';
+import '../stickman/stickman_game_page.dart';
+import '../stickman/stickman_page.dart';
 
 /// 路由路径常量
 class AppRoutePath {
@@ -32,6 +34,12 @@ class AppRoutePath {
 
   /// 羊了个羊 - 游戏对战
   static const String sheepGame = '/sheep/game';
+
+  /// 火柴人闯关 - 选关页
+  static const String stickman = '/stickman';
+
+  /// 火柴人闯关 - 游戏对战
+  static const String stickmanGame = '/stickman/game';
 }
 
 /// 全局路由配置
@@ -84,6 +92,21 @@ final GoRouter appRouter = GoRouter(
       path: AppRoutePath.sheepGame,
       builder: (BuildContext context, GoRouterState state) {
         return const SheepGamePage();
+      },
+    ),
+    GoRoute(
+      path: AppRoutePath.stickman,
+      builder: (BuildContext context, GoRouterState state) {
+        return const StickmanPage();
+      },
+    ),
+    GoRoute(
+      path: AppRoutePath.stickmanGame,
+      builder: (BuildContext context, GoRouterState state) {
+        // 非法关卡编号回退第 1 关
+        final extra = state.extra;
+        final levelIndex = extra is int ? extra : 0;
+        return StickmanGamePage(levelIndex: levelIndex);
       },
     ),
   ],
